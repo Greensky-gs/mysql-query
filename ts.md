@@ -8,5 +8,5 @@ await query(`SELECT * FROM github WHERE username="Greensky-gs"`);
 // Returns:
 // string if error
 // any[] if successful
-// Node: You can also add a .catch() block
+// Note: You can also add a .catch() block
 ```
