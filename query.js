@@ -7,7 +7,7 @@ database.connect((error) => {
 
 module.exports.query = (query) => {
   return new Promise((resolve, reject) => {
-    database.query(resolve, (error, request) => {
+    database.query(query, (error, request) => {
       if (error) {
         reject(error);
       } else {
