@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-const database = mysql.createDatabase(/* Put your mysql informations here*/);
+const database = mysql.createConnection(/* Put your mysql informations here*/);
 database.connect((error) => {
   if (error) throw error;
 });
